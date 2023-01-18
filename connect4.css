@@ -1,0 +1,134 @@
+/* game board table */
+html {
+  background-color: rgb(39, 39, 39);
+  padding-left: 55px;
+}
+
+#description {
+  color: beige;
+}
+
+.descrip1 {
+  font-size: 25px;
+  margin-left: 110px;
+  color: beige;
+}
+.descrip2 {
+  font-size: 20px;
+  margin-left: 190px;
+  padding-bottom: 15px;
+  color: #acacac;
+}
+
+.title  {
+  margin-left: 220px;
+  font-size: 2rem; 
+  color: lightblue;
+  transition: color 900ms;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+#board {
+  border: solid 15px blue;
+  background-image: url("https://www.seekpng.com/png/full/377-3777584_connectbg-size-connect-4-board-transparent.png");
+  background-repeat: no-repeat;
+  background-size: 99.5%;
+  background-position-y: 100%;
+}
+
+#board td {
+  width: 100px;
+  height: 100px;
+  border: solid 1px rgb(0, 0, 0);
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+  /* TODO: make into circles */
+  border-radius: 50%;
+  margin: 5px;
+  width: 90%;
+  height: 90%;
+}
+
+/* TODO: make pieces red/blue,  depending on player 1/2 piece */
+.p2 {
+  background: rgb(0,0,0);
+  background: linear-gradient(167deg, rgba(0,0,0,1) 10%, rgb(110, 110, 110) 33%, rgb(63, 63, 63) 52%, rgba(0,0,0,1) 75%);
+  content: "P2";
+  text-align: center;
+  font-weight: bold;
+  line-height: 50px;
+  border-radius: 50%;
+  color: lightgray;
+}
+.p1 {
+  background: rgb(255,0,0);
+  background: linear-gradient(167deg, rgba(255,0,0,1) 10%, rgba(52,15,15,1) 33%, rgba(40,7,7,1) 52%, rgba(255,0,0,1) 75%);
+  Content: "P1";
+  text-align: center;
+  font-weight: bold;
+  line-height: 50px;
+  border-radius: 50%;
+  color: lightgray;
+}
+
+#play1 {
+  position:relative;
+  color: rgb(255,0,0);
+  font-size: 3rem;
+  text-shadow: rgb(0, 0, 0) 1px 0 3px;
+  display: inline-block;
+}
+
+#play2 {
+  position:relative;
+  color: rgb(121, 121, 121);
+  font-size: 3rem;
+  text-shadow: rgb(0, 0, 0) 1px 0 3px;
+}
+
+
+.top1:hover {
+  background: rgb(255,0,0);
+  background: linear-gradient(167deg, rgba(255,0,0,1) 10%, rgba(52,15,15,1) 33%, rgba(40,7,7,1) 52%, rgba(255,0,0,1) 75%);
+  border-radius: 50%;
+}
+
+.top2:hover {
+  background: rgb(0,0,0);
+  background: linear-gradient(167deg, rgba(0,0,0,1) 10%, rgb(110, 110, 110) 33%, rgb(63, 63, 63) 52%, rgba(0,0,0,1) 75%);
+  border-radius: 50%;
+}
+
+#reset {
+  align-items: center;
+  background: rgba(0,0,0,1);
+  background: linear-gradient(167deg, rgb(121, 121, 121) 6%, rgba(0,0,0,1) 28%, rgba(185,33,3,1) 54%, rgba(108,1,1,1) 94%);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: orangered 0 6px 15px -5px;
+  color: #FFFFFF;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 19px 24px;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#button {
+  display: inline-block;
+}
+
+#reset:hover {
+  color: black;
+  text-shadow: white 0.5px 0 4px ;
+}
+
+
